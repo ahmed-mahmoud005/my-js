@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(rgb(48, 1, 24), rgb(32, 2, 49));
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.head {
+    position: fixed;
+    width: 95%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.head h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.head ul {
+    list-style: none;
+    display: flex;
+}
+
+.head ul li {
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.head ul li:hover,
+.active {
+    background-color: #fff;
+    transition: 0.1s;
+}
+
+.head ul li:hover a,
+.active a {
+    color: #110101;
+}
+
+.h-cont {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.h-cont img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+
+.h-cont .nouvil2 {
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+
+.h-cont::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(48, 1, 24), rgba(48, 1, 24, 0));
+}
+
+.content {
+    padding: 30px;
+    color: #868686;
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin: 10px;
+}
